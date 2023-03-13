@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "tailwindcss -i ./src/input.css -o ./publich/output.css --watch",
+    "start:dev": "live-server publich"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }
